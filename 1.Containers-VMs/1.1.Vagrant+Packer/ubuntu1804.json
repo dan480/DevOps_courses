@@ -40,7 +40,7 @@
         "boot_wait": "10s",
         "disk_size": 81920,
         "guest_os_type": "Ubuntu_64",
-        "headless": true,
+        "headless": false,
         "http_directory": "http",
         "iso_urls": [
           "ubuntu-18.04.5-server-amd64.iso",
