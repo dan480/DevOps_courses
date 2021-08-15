@@ -15,9 +15,12 @@
    sudo apt-get install virtualbox-6.1  
    sudo apt install build-essential dkms  
    ```
-## 3. 
-
-
-
-![alt text](https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg?raw=true)
+## 3. Install Vagrant using the instructions on the HashiCorp website.  
+   ```sh
+   curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -  
+   sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"  
+   sudo apt-get update && sudo apt-get install vagrant  
+   ```
+## 4. Create the "http" folder with the preseed.cfg file (the operating system installation automation file). Creating the "scripts" folder (optional) with scripts( for configuring the operating system after installation). Next, we create a configuration file for Packer. And execute the command "packer build *name of the packer configuration file*". As a result, a file with the extension will appear .box-an image that can be used in Vagrant.The result of the work is shown in the screenshot below.
+![alt text](https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg?raw=true =300*300)
    
