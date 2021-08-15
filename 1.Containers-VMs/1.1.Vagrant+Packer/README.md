@@ -32,5 +32,5 @@
    sudo nano ubuntu1804.json
    packer build ubuntu1804.json
    ```
-   ![alt text](https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg?raw=true =300*300)
+   ![alt text](https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg=300*300)
    
