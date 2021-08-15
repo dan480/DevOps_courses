@@ -6,7 +6,7 @@
    sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"  
    sudo apt-get update && sudo apt-get install packer  
 ## 2. I installed VirtualBox using the instructions on the virtualbox website. I also installed guest additions.  
-   !wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -  
+   ![alt text]wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -  
    wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -  
    sudo apt-get update  
    sudo apt-get install virtualbox-6.1  
