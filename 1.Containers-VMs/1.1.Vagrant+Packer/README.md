@@ -21,6 +21,16 @@
    sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"  
    sudo apt-get update && sudo apt-get install vagrant  
    ```
-## 4. Create the "http" folder with the preseed.cfg file (the operating system installation automation file). Creating the "scripts" folder (optional) with scripts( for configuring the operating system after installation). Next, we create a configuration file for Packer. And execute the command "packer build *name of the packer configuration file*". As a result, a file with the extension will appear .box-an image that can be used in Vagrant.The result of the work is shown in the screenshot below.
-![alt text](https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg?raw=true =300*300)
+## 4. Create the "http" folder with the preseed.cfg file (the operating system installation automation file). Creating the "scripts" folder (optional) with scripts( for configuring the operating system after installation). Next, we create a configuration file for Packer. And execute the command "packer build *-name of the packer configuration file-". As a result, a file with the extension will appear .box-an image that can be used in Vagrant.The result of the work is shown in the screenshot below.  
+   ```sh
+   mkdir http
+   sudo nano preseed.cfg
+   mkdir scripts
+   cd scripts
+   sudo nano init.sh
+   cd ..
+   sudo nano ubuntu1804.json
+   packer build ubuntu1804.json
+   ```
+   ![alt text](https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg?raw=true =300*300)
    
