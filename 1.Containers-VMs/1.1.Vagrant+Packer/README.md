@@ -13,5 +13,5 @@
 
 
 
-![alt text](https://github.com/dan480/DevOps_courses/blob/main/packer_finish.jpg?raw=true)
+![alt text](https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg?raw=true)
    
