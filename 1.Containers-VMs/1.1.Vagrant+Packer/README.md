@@ -33,7 +33,6 @@
    packer build ubuntu1804.json
    ```
    <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg" alt="drawing" width="800"/>  
-### P.S. I created an image from under Windows 10. Initially, I used a virtual machine on Azure with Ubuntu 18.04, but after it turned out to be on a low tariff, virtualization is not supported.  
-
+   ### P.S. I created an image from under Windows 10. Initially, I used a virtual machine on Azure with Ubuntu 18.04, but after it turned out to be on a low tariff, virtualization is not supported.  
 ## 5. 
    
