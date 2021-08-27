@@ -1,13 +1,13 @@
-# How was it?
+# Выполнение:
 ************
 
-## 1. Install Packer using the instructions on the HashiCorp website.  
+## 1. Установка Packer используя инструкцию на сайте компании HashiCorp.  
    ```sh  
    curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -  
    sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"  
    sudo apt-get update && sudo apt-get install packer  
    ```  
-## 2. Install VirtualBox using the instructions on the virtualbox website. Also install guest additions.  
+## 2. Установка VirtualBox используя инструкцию на сайте virtualbox. Также установил guest additions.  
    ```sh
    wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -  
    wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -  
@@ -15,13 +15,13 @@
    sudo apt-get install virtualbox-6.1  
    sudo apt install build-essential dkms  
    ```
-## 3. Install Vagrant using the instructions on the HashiCorp website.  
+## 3. Установка Vagrant используя инструкцию на сайте компании HashiCorp.  
    ```sh
    curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -  
    sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"  
    sudo apt-get update && sudo apt-get install vagrant  
    ```
-## 4. Create the "http" folder with the preseed.cfg file (the operating system installation automation file). Creating the "scripts" folder (optional) with scripts( for configuring the operating system after installation). Next, we create a configuration file for Packer. And execute the command "packer build *-name of the packer configuration file-". As a result, a file with the extension will appear .box-an image that can be used in Vagrant.The result of the work is shown in the screenshot below.  
+## 4.  Создаем папку "http" с файлом preseed.cfg (файл автоматизации установки операционной системы). Создание папки "Scripts" (необязательно) со сценариями( для настройки операционной системы после установки). Затем мы создадим файл конфигурации для Packer. И выпjkyztv команду "packer build *-имя файла конфигурации упаковщика-". В результате появится файл с расширением .box - изображение, которое можно использовать в Vagrant.Результат работы показан на скриншоте ниже.  
    ```sh
    mkdir http
    sudo nano preseed.cfg
@@ -35,7 +35,10 @@
    <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg" alt="drawing" width="800"/>  
    *P.S. I created an image from under Windows 10. Initially, I used a virtual machine on Azure with Ubuntu 18.04, but after it turned out to be on a low tariff, virtualization is not supported.*
      
-## 5. 
+## 5. Запускаем виртуальную машину.
+   ```sh
+   vagrant up
+   ```
 
 
    
