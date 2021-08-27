@@ -35,10 +35,20 @@
    <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg" alt="drawing" width="800"/>  
    *P.S. I created an image from under Windows 10. Initially, I used a virtual machine on Azure with Ubuntu 18.04, but after it turned out to be on a low tariff, virtualization is not supported.*
      
-## 5. Запускаем виртуальную машину.
+## 5. Создаем виртуальную машину. И подключаемся к ней с помощью логина и пароля.
    ```sh
    vagrant up
+   ssh -p2222 vagrant@127.0.0.1
    ```
+   <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/start_vm1.jpg" alt="drawing"/>
+
+## 6. Добавить chef-рецепты ---
+
+## 7. Проброс порта настраивается в файле Vagrantfile
+   ```sh
+   # config.vm.forward_port 80, 4567
+   ```
+## 8 Создать новый шаблон для виртуальной машины с предустановленной mariadb dvtcnj mysql
 
 
    
