@@ -1,12 +1,12 @@
 # DevOps_courses
 ________________
-## Краткий отчет:
+## Report:
 
-1. Containers-VMs           - частично выполнил
-2. Jenkins-TeamCity         - не выполнил
-3. Ansible                  - не выполнил
-4. Linux                    - частично выполнил
-5. AWS                      - не выполнил
-6. Cloudformation-Terraform - не выполнил
-7. Azure                    - начал выполнять
-9. Extras                   - не выполнил
+1. Containers-VMs           - In the work
+2. Jenkins-TeamCity         - I didn't do it
+3. Ansible                  - I didn't do it
+4. Linux                    - In the work
+5. AWS                      - I didn't do it
+6. Cloudformation-Terraform - I didn't do it
+7. Azure                    - In the work
+9. Extras                   - I didn't do it
