@@ -21,21 +21,22 @@
    sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"  
    sudo apt-get update && sudo apt-get install vagrant  
    ```
-## 4.  Создаем папку "http" с файлом preseed.cfg (файл автоматизации установки операционной системы). Создание папки "Scripts" (необязательно) со сценариями( для настройки операционной системы после установки). Затем мы создадим файл конфигурации для Packer. И выпjkyztv команду "packer build *-имя файла конфигурации упаковщика-". В результате появится файл с расширением .box - изображение, которое можно использовать в Vagrant. Результат работы показан на скриншоте ниже.  
+## 4.  Создаем папку "http" с файлом preseed.cfg (файл автоматизации установки операционной системы). Создание папки "Scripts" (необязательно) со сценариями( для настройки операционной системы после установки). Затем мы создадим файл конфигурации для Packer. И выполняем команду "packer build *-имя файла конфигурации Packer-". В результате появится файл с расширением .box - изображение, которое можно использовать в Vagrant. Результат работы показан на скриншоте ниже. Ещё нужно скачать образ операционной системы, который укажем в файле конфигурации Packer.
    ```sh
-   mkdir http
+   sudo mkdir http
    cd http
    sudo nano preseed.cfg
-   mkdir scripts
+   cd ..
+   sudo mkdir scripts
    cd scripts
    sudo nano init.sh
    cd ..
+   sudo wget http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-18.04.5-server-amd64.iso
    sudo nano ubuntu1804.json
    packer build ubuntu1804.json
    ```
    <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg" alt="drawing" width="800"/>  
-   *P.S. I created an image from under Windows 10. Initially, I used a virtual machine on Azure with Ubuntu 18.04, but after it turned out to be on a low tariff, virtualization is not supported.*
-     
+       
 ## 5. Создаем виртуальную машину. И подключаемся к ней с помощью логина и пароля.
    ```sh
    vagrant up
@@ -49,7 +50,8 @@
    ```sh
    # config.vm.forward_port 80, 4567
    ```
-## 8 Создать новый шаблон для виртуальной машины с предустановленной mariadb dvtcnj mysql
+## 8. Создать новый шаблон для виртуальной машины с предустановленной mariadb вместо mysql
+   В файле конфигурации Packer в разделе 'provisioners' добавляем скрипт, который установит mariadb.
 
 
    
