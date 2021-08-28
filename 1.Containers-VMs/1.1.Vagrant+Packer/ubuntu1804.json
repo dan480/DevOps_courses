@@ -46,7 +46,8 @@
           "ubuntu-18.04.5-server-amd64.iso",
           "http://cdimage.ubuntu.com/ubuntu/releases/bionic/release/ubuntu-18.04.5-server-amd64.iso"
         ],
-        "iso_checksum": "sha256:8c5fc24894394035402f66f3824beb7234b757dd2b5531379cb310cedfdf0996",
+        "iso_checksum": "8c5fc24894394035402f66f3824beb7234b757dd2b5531379cb310cedfdf0996",
+        "iso_checksum_type": "sha256",
         "ssh_username": "vagrant",
         "ssh_password": "vagrant",
         "ssh_port": 22,
@@ -60,7 +61,7 @@
             "modifyvm",
             "{{.Name}}",
             "--memory",
-            "1024"
+            "2048"
           ],
           [
             "modifyvm",
