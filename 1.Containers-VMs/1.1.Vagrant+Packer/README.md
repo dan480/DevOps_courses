@@ -35,7 +35,7 @@
    sudo nano ubuntu1804.json
    packer build ubuntu1804.json
    ```
-   <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_finish.jpg" alt="drawing" width="800"/>  
+   <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/packer_box_done.png" alt="drawing" width="800"/>  
        
 ## 5. Создаем виртуальную машину. И подключаемся к ней с помощью логина и пароля.
    ```sh
