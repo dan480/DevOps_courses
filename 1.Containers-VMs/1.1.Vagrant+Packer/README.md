@@ -45,11 +45,14 @@
    <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/vagrant_up.jpg" alt="drawing"/>
    <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/ssh.jpg" alt="drawing"/>
 
-## 6. Добавить chef-рецепты ---
+## 6. Добавить chef-рецепты для установки Apache/Nginx,Java, Tomcat, MySQL (client & server).
+   Для автоматизации установки программного обеспечения используем Ansible.
+   
+   # -------------------Skip-----------------------------
 
 ## 7. Проброс портов настраивается в файле Vagrantfile
    ```sh
-   # config.vm.forward_port 80, 4567
+   # config.vm.network "forwarded_port", guest: 22, host: 22022
    ```
 ## 8. Создать новый шаблон для виртуальной машины с предустановленной mariadb вместо mysql
    В файле конфигурации Packer в разделе 'provisioners' добавляем скрипт, который установит mariadb.
