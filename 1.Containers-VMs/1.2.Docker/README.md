@@ -12,8 +12,9 @@ su - ${USER}
    sudo mkdir docker
    cd docker
    ```  
-## 2. Скачать контейнер nginx с docker hub. И запустить его с параметром -з или -expose.
+## 2. Скачать контейнер nginx с docker hub. И запустить его с параметром -p или -expose.
    ```sh
    docker pull nginx
-   
+   docker run --name test-nginx -p 8080:80 nginx
    ```
+   <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.2.Docker/nginx.jpg" />
