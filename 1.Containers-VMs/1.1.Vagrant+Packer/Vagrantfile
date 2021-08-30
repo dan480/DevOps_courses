@@ -1,23 +1,16 @@
 # -*- mode: ruby -*-
+# vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "builds/ubuntu1804"
-  # не проверять репозиторий на наличие обновлений
-  config.vm.box_check_update = false
+  config.vm.box = "virtualbox-ubuntu-18-04.box"
+  config.vm.synced_folder "/tmp", "/vagrant", disabled: 'true'
+  config.ssh.username = 'vagrant'
+  config.ssh.password = 'vagrant'
   
-  config.vm.network :forwarded_port, guest: 22, host: 22022
-  config.vm.network :forwarded_port, guest: 80, host: 22080
-  config.vm.network :forwarded_port, guest: 443, host: 22443
-  config.vm.network :forwarded_port, guest: 3306, host: 22306
+  # проброс портов
+  # config.vm.network "forwarded_port", guest: 22, host: 22022
+  # config.vm.network 'forwarded_port', guest: 80, host: 22080
+  # config.vm.network 'forwarded_port', guest: 443, host: 22443
+  # config.vm.network 'forwarded_port', guest: 306, host: 22306
 
-
-  config.vm.provider "virtualbox" do |vb|
-    # имя виртуальной машины
-    vb.name = "ubuntu1804test"
-    # объем оперативной памяти
-    vb.memory = 2048
-    # количество ядер процессора
-    vb.cpus = 1
-  end
-  
 end
