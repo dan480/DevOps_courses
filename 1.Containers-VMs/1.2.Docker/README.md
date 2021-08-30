@@ -23,3 +23,4 @@ su - ${USER}
    docker pull mysql
    docker run --name=db -d -p 3306:3306 -v ~/docker/mysql/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123 mysql
    ```
+   <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.2.Docker/mysql.jpg"/>
