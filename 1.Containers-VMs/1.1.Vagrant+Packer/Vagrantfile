@@ -3,14 +3,20 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "virtualbox-ubuntu-18-04.box"
-  config.vm.synced_folder "/tmp", "/vagrant", disabled: 'true'
+  config.vm.synced_folder "/vagrant", disabled: 'true'
   config.ssh.username = 'vagrant'
   config.ssh.password = 'vagrant'
+  
+  # Использование Ansible и указание файла с рецептами.
+  # config.vm.provision "ansible_local" do |ansible|
+  #  ansible.playbook = "playbook.yml"
+  # end
   
   # проброс портов
   # config.vm.network "forwarded_port", guest: 22, host: 22022
   # config.vm.network 'forwarded_port', guest: 80, host: 22080
   # config.vm.network 'forwarded_port', guest: 443, host: 22443
   # config.vm.network 'forwarded_port', guest: 306, host: 22306
+  
 
 end
