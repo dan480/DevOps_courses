@@ -23,6 +23,14 @@ su - ${USER}
    ```sh
    docker pull mysql
    docker run --name=db -d -p 3306:3306 -v ~/docker/mysql/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123 mysql
+   docker exec -it db /bin/bash
    ```
    
    <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.2.Docker/mysql.jpg" />
+   
+   ```sh
+   mysql -u root -p
+   CREATE USER 'test_user'@'localhost' IDENTIFIED BY 'pass';
+   CREATE DATABASE DB_TEST;
+   ```
+   <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.2.Docker/DB_TEST.jpg" />
