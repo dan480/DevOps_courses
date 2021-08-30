@@ -42,7 +42,7 @@
    vagrant up
    ssh -p2222 vagrant@127.0.0.1
    ```
-   <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/start_vm1.jpg" alt="drawing"/>
+   <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.1.Vagrant%2BPacker/vagrant_up.jpg" alt="drawing"/>
 
 ## 6. Добавить chef-рецепты ---
 
