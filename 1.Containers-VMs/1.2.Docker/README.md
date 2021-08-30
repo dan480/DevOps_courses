@@ -36,3 +36,6 @@ su - ${USER}
    
    <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.2.Docker/DB_TEST.jpg" />  
    
+## 4. Создаем файл Dockerfile, на основе образа Ubuntu 20.04, дополняем Ruby 2.7.2, запускаем контейнер для выполнения и проверяем работоспособность ruby.  
+   <img src="https://github.com/dan480/DevOps_courses/blob/main/1.Containers-VMs/1.2.Docker/ruby.jpg" />
+   
